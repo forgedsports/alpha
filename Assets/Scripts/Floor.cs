@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea98c0edb7112d9813852288598bf87a6e80c64f6a6df0a514bce1c797988117
-size 610
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+// Used to access objects on a given floor
+public class Floor : MonoBehaviour
+{
+    public SmudgeManager smudgeManager;
+    public WindowController windowController;
+
+    void Awake()
+    {
+        
+    }
+    void Start()
+    {}
+
+    
+    void Update()
+    {
+        
+    }
+
+    public void InitializeFloor(List<Tuple<Vector3, Smudge.SmudgeType>> smudges)
+    {
+        foreach (Tuple<Vector3, Smudge.SmudgeType> smudgeInfo in smudges)
+        {
+            smudgeManager.AddSmudge(smudgeInfo);
+        }
+    }
+}
