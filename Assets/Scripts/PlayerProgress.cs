@@ -1,16 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class PlayerProgress : MonoBehaviour
-{
-    float percent;
-    // Start is called before the first frame update
-    void Start()
-    {
-        percent = PersistentManagerScript.Instance.levelProgress;
-        float heightChange = transform.GetComponent<RectTransform>().rect.height * percent;
-        transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * (1.0f - percent), transform.localScale.z);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d1da532d56b209ec1f65d32fd092831f2e1e95276614645ee04b5313aca188d
+size 547

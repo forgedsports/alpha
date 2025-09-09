@@ -1,27 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class WindowController : MonoBehaviour
-{
-    public SmudgeManager smudgeManager; // access this smudgeManager (already linked in editor)
-
-    private float dirtiness = 1; //should be from 1 to 0, starts out dirty
-    private SpriteRenderer windowSprite;
-    
-    void Start()
-    {
-        windowSprite = GetComponent<SpriteRenderer>();
-    }
-
-    void Update()
-    {
-        CheckSmudges();
-    }
-
-    void CheckSmudges()
-    {
-        Color windowColor = windowSprite.color;
-        windowSprite.color = new Color(windowColor.r, windowColor.g, windowColor.b, smudgeManager.Progress);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:532365b773fdbb25a56e14ea4580618e27faf484de3bf7e0de3499ae25a0300a
+size 684

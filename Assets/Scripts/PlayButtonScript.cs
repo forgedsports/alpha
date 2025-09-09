@@ -1,21 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class PlayButtonScript : MonoBehaviour
-{
-   public void PlayGame()
-    {
-        SaveLoader.LoadGame();
-        SceneManager.LoadScene("TutorialScene");
-    }
-
-   void Update()
-   {
-       if (Input.GetKeyDown(KeyCode.Space))
-       {
-           PlayGame();
-       }
-   }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce2c0aa15efcf60860f1ddd4ff1113b55c746cbd43ca78944460090811fa6183
+size 399
